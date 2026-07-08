@@ -4,35 +4,35 @@
     "nombre": "Análisis de accesibilidad web",
     "nivel": "Nivel Diseño Web",
     "descripcion": "Revisión visual enfocada en contraste, jerarquía, legibilidad, botones, estructura de contenido y experiencia accesible.",
-    "precioBase": 12500
+    "precioBase": 800
   },
   {
     "id": 2,
     "nombre": "Análisis de accesibilidad web",
     "nivel": "Nivel Diseño y Programación",
     "descripcion": "Revisión visual y técnica del sitio, incluyendo estructura HTML, navegación, formularios, etiquetas y elementos interactivos.",
-    "precioBase": 45000
+    "precioBase": 1200
   },
   {
     "id": 3,
     "nombre": "Análisis y Remediación",
     "nivel": "Diseño Web",
     "descripcion": "Incluye análisis visual y ajustes de diseño para mejorar contraste, legibilidad, jerarquía visual y accesibilidad de la interfaz.",
-    "precioBase": 26500
+    "precioBase": 1800
   },
   {
     "id": 4,
     "nombre": "Análisis y Remediación",
     "nivel": "Diseño Web y Programación",
     "descripcion": "Incluye análisis completo y correcciones visuales y técnicas para mejorar la accesibilidad general del sitio.",
-    "precioBase": 49500
+    "precioBase": 2500
   },
   {
     "id": 5,
     "nombre": "Desarrollo de página web accesible",
     "nivel": "Proyecto desde cero",
     "descripcion": "Diseño y desarrollo de una página web pensada desde el inicio con criterios de accesibilidad, estructura clara y experiencia inclusiva.",
-    "precioBase": 212000
+    "precioBase": 3550
   },
 
 {

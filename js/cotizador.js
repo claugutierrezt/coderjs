@@ -69,7 +69,7 @@ function mostrarServicios(listaServicios) {
     footer.classList.add("tarjeta-servicio__footer");
 
     const precio = document.createElement("strong");
-    precio.textContent = `Desde: ${formatoMoneda.format(servicio.precioBase)} MXN`;
+    precio.textContent = `${formatoMoneda.format(servicio.precioBase)} MXN por sección`;
 
     const boton = document.createElement("button");
     boton.type = "button";
@@ -109,17 +109,7 @@ function seleccionarServicio(idServicio) {
 }
 
 function calcularTotal(precioBase, paginas) {
-  let multiplicador = 1;
-
-  if (paginas >= 4 && paginas <= 6) {
-    multiplicador = 1.3;
-  }
-
-  if (paginas >= 7) {
-    multiplicador = 1.6;
-  }
-
-  return precioBase * multiplicador;
+  return precioBase * paginas;
 }
 
 function mostrarResumenCotizacion() {
