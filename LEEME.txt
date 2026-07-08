@@ -1,0 +1,1 @@
+Desarrollé un cotizador interactivo para Stella A11y, una página de servicios de accesibilidad web. El simulador permite seleccionar un servicio, calcular una estimación según número de secciones, completar datos de contacto y recibir una confirmación de solicitud.

@@ -1,0 +1,31 @@
+/* =========================
+   ANIMACIONES
+   ========================= */
+
+@keyframes slideInUpSoft {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animar el título */
+
+.titulo-animado {
+  animation: slideInUpSoft 1s ease-in-out;
+}
+
+/* Imagen index con zoom suave */
+
+.imagen-zoom-suave {
+  transition: transform 0.5s ease-in-out;
+}
+
+.imagen-zoom-suave:hover {
+  transform: scale(1.04);
+}

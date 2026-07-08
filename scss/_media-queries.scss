@@ -1,0 +1,129 @@
+@use 'mixins' as *;
+
+/* =========================
+   GALERÍA PARA CELULAR
+   ========================= */
+
+@include mobile {
+
+  /* Ocultar slider en móvil */
+  #galeriaStella {
+    display: none;
+  }
+
+  /* Mostrar galería en celular */
+  .stella-masonry-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .stella-masonry-mobile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 991px) {
+
+  .two-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .two-col img {
+    max-width: 100%;
+  }
+
+  .soluciones {
+    gap: 16px;
+  }
+
+  .solution-card {
+    flex: 1 1 100%;
+  }
+
+  #galeriaStella {
+    width: 100%;
+  }
+
+  .stella-carousel-img {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+/* =========================
+   BANNERS ADAPTADOS
+   ========================= */
+
+@include mobile {
+  .hero-soluciones img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+@include mobile {
+  .imagen-hero-home {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex: 0 1 auto;
+    max-height: 340px;
+    object-fit: contain;
+  }
+}
+
+/* =========================
+   VIDEO IFRAME
+==========================*/
+
+   @include mobile {
+  .contacto-video iframe {
+    max-width: 100%;
+    height: 500px;
+    
+  }
+}
+
+/* =========================
+   AJUSTES RESPONSIVE PARA TABLET
+   ========================= */
+
+@media (max-width: 991px) {
+  .two-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .two-col img {
+    max-width: 100%;
+  }
+
+  .soluciones {
+    gap: 16px;
+  }
+
+  .solution-card {
+    flex: 1 1 100%;
+  }
+
+  #galeriaStella {
+    width: 100%;
+  }
+
+  .stella-carousel-img {
+    width: 100%;
+    height: 320px;
+  }
+}

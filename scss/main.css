@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/* Archivo principal de estilos */
+/* =========================
+   VARIABLES
+   ========================= */
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   SALTAR CONTENIDO
+   ========================= */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #F5C15C;
+  color: #000;
+  padding: 10px 12px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  outline: 2px solid #11243C;
+  outline-offset: 2px;
+}
+
+/* =========================
+   TÍTULOS
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* =========================
+   CONTENEDOR PROPIO
+   ========================= */
+.stella-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.stella-container > *:last-child {
+  margin-bottom: 0;
+}
+
+.stella-container img {
+  margin-bottom: 24px;
+}
+
+/* =========================
+   SECCIONES
+   ========================= */
+.section {
+  padding: 48px 0;
+}
+
+/* =========================
+   BOTÓN
+   ========================= */
+button {
+  background-color: #F5C15C;
+  border: 1px solid #F5C15C;
+  color: #000000;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+button:hover, button:focus {
+  background-color: #11243C;
+  border-color: #11243C;
+  color: #ffffff;
+}
+
+/* =========================
+   MIXINS
+   ========================= */
+/* Archivo principal de estilos */
+/* =========================
+   NAVBAR (BOOTSTRAP)
+   ========================= */
+.navbar {
+  background-color: #212529;
+}
+
+.navbar .container {
+  max-width: 1100px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 0;
+  display: block;
+}
+
+.navbar-nav .nav-link {
+  color: #fdfdfd;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #F5C15C;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background-color: #000000;
+  border-top: 1px solid #F5C15C;
+  color: #F5C15C;
+}
+
+footer .stella-container {
+  padding: 10px 24px;
+}
+
+footer p,
+footer a {
+  color: #F5C15C;
+  margin: 0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Archivo principal de estilos */
+/* =========================
+   2 COLUMNAS
+   ========================= */
+.two-col {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.two-col > div {
+  flex: 1 1 320px;
+}
+.two-col img {
+  flex: 1 1 320px;
+  max-width: 500px;
+}
+
+/* =========================
+   HOME – 3 BOXES
+   ========================= */
+.soluciones {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 24px 0 48px;
+}
+
+.solution-card {
+  border: 1px solid #DFE3E7;
+  padding: 18px;
+  flex: 1 1 260px;
+  background: #ffffff;
+}
+.solution-card img {
+  width: 24px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   SECCIÓN CON FONDO
+   ========================= */
+.solucion {
+  background: #ffffff;
+  padding: 48px 0;
+}
+.solucion.gris {
+  background: #ededed;
+}
+
+/* =========================
+   CONTACTO
+   ========================= */
+.contact-form {
+  max-width: 800px;
+}
+.contact-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form > div {
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.form-row > div {
+  flex: 1;
+}
+
+/* =========================
+   GALERÍA
+   ========================= */
+#galeriaStella {
+  margin-top: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 500px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stella-carousel-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+/* =========================
+   GALERÍA PARA CELULAR
+   ========================= */
+.stella-masonry-mobile {
+  display: none;
+}
+
+/* =========================
+   VIDEO IFRAME
+=========================== */
+.contacto-video iframe {
+  width: 100%;
+  max-width: 315px;
+  height: 560px;
+  border: 0;
+  display: block;
+}
+
+/* =========================
+   GALERÍA PARA CELULAR
+   ========================= */
+@media (max-width: 767px) {
+  /* Ocultar slider en móvil */
+  #galeriaStella {
+    display: none;
+  }
+  /* Mostrar galería en celular */
+  .stella-masonry-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .stella-masonry-mobile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 991px) {
+  .two-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .two-col img {
+    max-width: 100%;
+  }
+  .soluciones {
+    gap: 16px;
+  }
+  .solution-card {
+    flex: 1 1 100%;
+  }
+  #galeriaStella {
+    width: 100%;
+  }
+  .stella-carousel-img {
+    width: 100%;
+    height: 320px;
+  }
+}
+/* =========================
+   BANNERS ADAPTADOS
+   ========================= */
+@media (max-width: 767px) {
+  .hero-soluciones img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .imagen-hero-home {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex: 0 1 auto;
+    max-height: 340px;
+    object-fit: contain;
+  }
+}
+/* =========================
+   VIDEO IFRAME
+==========================*/
+@media (max-width: 767px) {
+  .contacto-video iframe {
+    max-width: 100%;
+    height: 500px;
+  }
+}
+/* =========================
+   AJUSTES RESPONSIVE PARA TABLET
+   ========================= */
+@media (max-width: 991px) {
+  .two-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .two-col img {
+    max-width: 100%;
+  }
+  .soluciones {
+    gap: 16px;
+  }
+  .solution-card {
+    flex: 1 1 100%;
+  }
+  #galeriaStella {
+    width: 100%;
+  }
+  .stella-carousel-img {
+    width: 100%;
+    height: 320px;
+  }
+}
+/* =========================
+   ANIMACIONES
+   ========================= */
+@keyframes slideInUpSoft {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animar el título */
+.titulo-animado {
+  animation: slideInUpSoft 1s ease-in-out;
+}
+
+/* Imagen index con zoom suave */
+.imagen-zoom-suave {
+  transition: transform 0.5s ease-in-out;
+}
+
+.imagen-zoom-suave:hover {
+  transform: scale(1.04);
+}
+
+/*# sourceMappingURL=main.css.map */

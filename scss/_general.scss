@@ -1,0 +1,117 @@
+/* =========================
+   VARIABLES
+   ========================= */
+$color-accent: #F5C15C;
+$color-dark: #11243C;
+$color-text: #333333;
+$color-white: #ffffff;
+$color-border: #DFE3E7;
+$color-footer-border: #ccc;
+$color-navbar: #212529;
+
+$font-body: "Poppins", Arial, sans-serif;
+$font-title: "Montserrat", Arial, sans-serif;
+
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-body;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   SALTAR CONTENIDO
+   ========================= */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: $color-accent;
+  color: #000;
+  padding: 10px 12px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  outline: 2px solid $color-dark;
+  outline-offset: 2px;
+}
+
+/* =========================
+   TÍTULOS
+   ========================= */
+
+h1,h2, h3, h4, h5, h6
+ {
+  font-family: $font-title;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* =========================
+   CONTENEDOR PROPIO
+   ========================= */
+
+.stella-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.stella-container > *:last-child {
+  margin-bottom: 0;
+}
+
+.stella-container img {
+  margin-bottom: 24px;
+}
+
+/* =========================
+   SECCIONES
+   ========================= */
+
+.section {
+  padding: 48px 0;
+}
+
+/* =========================
+   BOTÓN
+   ========================= */
+
+button {
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+  color: #000000;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: #11243C;
+    border-color: #11243C;
+    color: #ffffff;
+  }
+}
