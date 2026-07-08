@@ -1,1 +1,3 @@
-En este proyecto apliqué manipulación del DOM, eventos, consumo de datos desde JSON con Fetch, uso de arrays de objetos, validaciones, almacenamiento local con localStorage y una librería externa, SweetAlert2, para mejorar la experiencia del usuario sin usar alert, prompt ni confirm.
+En este proyecto apliqué los principales conceptos del curso para desarrollar una aplicación web funcional. Utilicé manipulación del DOM, eventos, consumo de datos desde un archivo JSON con Fetch, arrays de objetos, validaciones, almacenamiento local con localStorage y la librería externa SweetAlert2 para mejorar la experiencia del usuario sin usar alert, prompt ni confirm.
+
+También comprendí cómo JavaScript puede integrarse a una página web existente para simular un proceso comercial real, en este caso, la cotización de servicios de accesibilidad web
